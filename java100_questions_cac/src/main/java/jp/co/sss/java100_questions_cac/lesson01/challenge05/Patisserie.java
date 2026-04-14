@@ -29,6 +29,43 @@
 
 package jp.co.sss.java100_questions_cac.lesson01.challenge05;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
 public class Patisserie {
+
+	public static void main(String[] args) throws IOException {
+
+		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+
+		System.out.println("それぞれ何個ずつ買いますか？(最大30個まで)\n");
+
+		System.out.println("シトロン	>");
+		String sitoron = reader.readLine();
+		int buysitoron = Integer.parseInt(sitoron);
+
+		System.out.println("ショコラ	>");
+		String syokora = reader.readLine();
+		int buysyokora = Integer.parseInt(syokora);
+
+		System.out.println("ピスターシュ	>");
+		String pisutasyu = reader.readLine();
+		int buypisutasyu = Integer.parseInt(pisutasyu);
+
+		System.out.println("\nシトロン	" + buysitoron + "個");
+		System.out.println("ショコラ	" + buysyokora + "個");
+		System.out.println("ピスターシュ	" + buypisutasyu + "個\n");
+
+		//先にそれぞれの計算を変数として作り入れるほうがきれい！
+		//ex. int totalcount=(buy~~~)
+
+		System.out.println("合計個数" + (buysitoron + buysyokora + buypisutasyu) + "個");
+		System.out.println("合計金額" + (buysitoron * 250 + buysyokora * 280 + buypisutasyu * 320) + "円");
+
+		System.out.println("\nをお買い上げですね。");
+		System.out.println("承りました。");
+
+	}
 
 }

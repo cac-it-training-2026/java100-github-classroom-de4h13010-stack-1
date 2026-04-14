@@ -22,5 +22,17 @@
 package jp.co.sss.java100_questions_cac.lesson01.challenge03;
 
 public class Patisserie {
+	public static void main(String[] args) {
 
+		System.out.println("本日のおすすめ商品です。\n");
+
+		int sito = 30;
+		int syok = 30;
+		int pist = 30;
+
+		System.out.println("シトロン\\250・・・残り" + sito + "個");
+		System.out.println("ショコラ\\280・・・残り" + syok + "個");
+		System.out.println("ピスターシュ\\320・・・残り" + pist + "個");
+
+	}
 }
